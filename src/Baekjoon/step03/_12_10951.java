@@ -9,16 +9,15 @@ public class _12_10951 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        StringTokenizer st;
-        while(true) {
-            st = new StringTokenizer(br.readLine());
-            int num1 = Integer.parseInt(br.readLine());
-            int num2 = Integer.parseInt(br.readLine());
-            if (num1 == 0 && num2 == 0) {
-                break;
-            }
+        String line;
+
+        while((line = br.readLine()) != null) {
+            StringTokenizer st = new StringTokenizer(line);;
+            int num1 = Integer.parseInt(st.nextToken());
+            int num2 = Integer.parseInt(st.nextToken());
             bw.write((num1 + num2) + "\n");
         }
+
         br.close();
         bw.flush();
         bw.close();

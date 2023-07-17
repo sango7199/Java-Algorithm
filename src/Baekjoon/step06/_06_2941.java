@@ -24,7 +24,7 @@ public class _06_2941 {
                 }
             }
             if (!found) { // 일치하지 않는다면 일반 알파벳이므로 count++, 현재 위치도 i++
-                count++;;
+                count++;
                 i++;
             }
         }

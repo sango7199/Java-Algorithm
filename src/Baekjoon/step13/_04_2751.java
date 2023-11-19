@@ -27,11 +27,35 @@ public class _04_2751 {
 //            }
 //        }
 
-        //
+        // 퀵 정렬
+//        quickSort(arr, 0, N-1);
 
+        // 출력
         for (int Arr: arr
              ) {
             System.out.println(Arr);
         }
+    }
+//    // 퀵 정렬 메소드
+//    static void quickSort(int[] a, int left, int right) {
+//        int pl = left; // 왼쪽 커서
+//        int pr = right; // 오른쪽 커서
+//        int x = a[(pl + pr) / 2]; // 가운데 요소
+//
+//        do {
+//            while (a[pl] < x) pl++;
+//            while (a[pr] > x) pr--;
+//            if (pl <= pr) swap(a, pl++, pr--);
+//        } while (pl <= pr);
+//
+//        if (left < pr) quickSort(a, left, pr);
+//        if (pl < right) quickSort(a, pl, right);
+//    }
+
+    // swap 메소드
+    static void swap(int[] arr, int a, int b) {
+        int temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
     }
 }

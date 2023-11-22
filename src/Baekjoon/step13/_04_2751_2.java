@@ -6,7 +6,7 @@ import java.io.OutputStreamWriter;
 import java.util.Scanner;
 
 public class _04_2751_2 {
-    // 수 정렬하기 2
+    // 수 정렬하기 2 - 병합 정렬
     static int[] buff; // 작업용 배열
 
     // 재귀적 병합 정렬

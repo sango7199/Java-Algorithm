@@ -33,7 +33,7 @@ public class _04_2751_2 {
                 a[k++] = (buff[j] <= a[i] ? buff[j++] : a[i++]);
             }
 
-            while (j < p) { // 3. 남은 거 털어
+            while (j < p) { // 3. 남은 거 털기
                 a[k++] = buff[j++];
             }
         }
